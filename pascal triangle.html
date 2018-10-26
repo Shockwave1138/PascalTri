@@ -47,7 +47,7 @@ function generatePascal(n){
       if(k==i){
         arr[i].push(1);
       }else{
-        tmp = (!!arr[i-1][k-1]?arr[i-1][k-1]:0)+(!!arr[i-1][k]?arr[i-1][k]:0);
+        tmp = (arr[i-1][k-1]?arr[i-1][k-1]:0)+(arr[i-1][k]?arr[i-1][k]:0);
         arr[i].push(tmp);
       }
     }
